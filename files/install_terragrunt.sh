@@ -39,6 +39,6 @@ if [ $VERSION == "latest" ]; then
 fi
 
 echo "Installing Terragrunt $VERSION ..."
-curl -sSLO "https://github.com/$REPO_NAME/releases/download/${VERSION}/terragrunt_linux_amd64"
+curl -sfSLO "https://github.com/$REPO_NAME/releases/download/v${VERSION}/terragrunt_linux_amd64"
 mv -fT terragrunt_linux_amd64 /usr/local/bin/terragrunt
 chmod 775 /usr/local/bin/terragrunt
